@@ -6,19 +6,25 @@
 <body>
 <h1 id="answer" style="font-family: helvetica; padding: 100px; text-align: center">
 </h1>
+<br>
+<h4 id="detail" style="font-family: helvetica; text-align: center" />
 <script>
 var a = new Date();
 var result;
+var title;
 result = a.getHours()*60 + a.getMinutes()
 if (result < 510) // 8:30 am
 {
     result = "Yes";
+    title = "(If you're got to work by now)"
 }
 else
 {
     result = "No";
+    title = "(If you're didn't get to work by now)"
 }
-document.getElementById("answer").innerHTML = result
+document.getElementById("answer").innerHTML = result;
+document.getElementById("detail").innerHTML = title
 </script>
 </body>
 </html>
