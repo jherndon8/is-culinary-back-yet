@@ -1,0 +1,24 @@
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="Culinary.ico"> <!-- Thanks Andy! -->
+<title>Am I done being a tardyboi yet?</title>
+</head>
+<body>
+<h1 id="answer" style="font-family: helvetica; padding: 100px; text-align: center">
+</h1>
+<script>
+var a = new Date();
+var result;
+result = a.getHours()*60 + a.getMinutes()
+if (result < 510) // 8:30 am
+{
+    result = "Yes";
+}
+else
+{
+    result = "No";
+}
+document.getElementById("answer").innerHTML = result
+</script>
+</body>
+</html>
