@@ -16,12 +16,12 @@ result = a.getHours()*60 + a.getMinutes()
 if (result < 510) // 8:30 am
 {
     result = "Yes";
-    title = "(If you're got to work by now)"
+    title = "(If you got to work by now)"
 }
 else
 {
     result = "No";
-    title = "(If you're didn't get to work by now)"
+    title = "(If you didn't get to work by now)"
 }
 document.getElementById("answer").innerHTML = result;
 document.getElementById("detail").innerHTML = title
